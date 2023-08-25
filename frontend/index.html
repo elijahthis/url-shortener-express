@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>URL Shortner</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div>
+			<h1>Short it!</h1>
+			<div class="box">
+				<h2>Paste the URL here:</h2>
+				<form action="" class="shorten-form">
+					<input
+						type="text"
+						name="url"
+						aria-label="Long URL"
+						class="longURL"
+						required
+					/>
+					<button type="submit" class="submit-button">
+						<span>Shorten URL</span>
+						<svg
+							stroke="currentColor"
+							fill="currentColor"
+							stroke-width="0"
+							viewBox="0 0 24 24"
+							height="1em"
+							width="1em"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M12 22c5.421 0 10-4.579 10-10h-2c0 4.337-3.663 8-8 8s-8-3.663-8-8c0-4.336 3.663-8 8-8V2C6.579 2 2 6.58 2 12c0 5.421 4.579 10 10 10z"
+							></path>
+						</svg>
+					</button>
+				</form>
+				<p class="short-url">
+					SHORT URL:
+					<a href=""></a>
+				</p>
+				<p>
+					Shrink your links with ease! Transform long URLs into short, shareable
+					links with our URL shortener. Simplify sharing and tracking without
+					the fuss. Try it now!
+				</p>
+			</div>
+			<!-- <div class="wrapper">
+				<div class="imgWrap"><img src="featured-1.webp" alt="" /></div>
+				<div class="imgWrap"><img src="featured-2.webp" alt="" /></div>
+				<div class="imgWrap">
+					<img src="film 5 - spirited away.jpg" alt="" />
+				</div>
+			</div> -->
+		</div>
+		<script src="toastify/toastify.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

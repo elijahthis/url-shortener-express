@@ -1,0 +1,170 @@
+@keyframes spinLoader {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+html {
+	font-family: "Libre Franklin", sans-serif;
+}
+
+html * {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html *::selection {
+	background-color: #2a2f4f;
+	color: #ffffff;
+}
+
+body {
+	padding: 2rem;
+	text-align: center;
+	height: 100vh;
+	background-color: #2a2f4f;
+	color: #917fb3;
+
+	display: grid;
+	place-items: center;
+}
+
+h1 {
+	font-size: 4rem;
+	margin-bottom: 1rem;
+	color: #e5beec;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	color: #e5beec;
+	color: #2a2f4f;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: #e5beec;
+	color: #2a2f4f;
+
+	padding: 2rem;
+	border-radius: 12px;
+	max-width: 750px;
+}
+
+form {
+	width: 80%;
+	display: grid;
+	grid-template-columns: 1fr 140px;
+	margin-bottom: 1.5rem;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+input[type="text"] {
+	width: 100%;
+	padding: 0.5rem 1.2rem;
+	border: none;
+	border-radius: 0;
+	font-family: "Libre Franklin", sans-serif;
+	font-size: 1rem;
+	color: #2a2f4f;
+}
+
+button {
+	padding: 1rem 1rem;
+	border: 0;
+	font-family: "Libre Franklin", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 600;
+	background-color: #2a2f4f;
+	color: #ffffff;
+
+	cursor: pointer;
+
+	height: 56px;
+	display: grid;
+	place-items: center;
+}
+button:disabled {
+	background-color: #917fb3;
+	cursor: not-allowed;
+}
+button span {
+}
+button svg {
+	animation: spinLoader 0.4s ease-in-out infinite;
+	width: 1.4rem;
+	height: 1.4rem;
+	display: none;
+}
+
+p {
+	/* max-width: 50%; */
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.short-url {
+	font-weight: 500;
+	margin-bottom: 1.2rem;
+}
+.short-url a {
+	color: #2a2f4f;
+	text-decoration: none;
+	font-weight: 700;
+}
+.short-url a:hover {
+	text-underline-offset: 0.3rem;
+	text-decoration: underline;
+}
+
+/* ------------------------- Toastify ------------------------- */
+.toastify {
+	padding: 16px 20px;
+	color: #ffffff;
+	display: block;
+	box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12),
+		0 10px 36px -4px rgba(77, 96, 232, 0.3);
+	background: #917fb3;
+	position: fixed;
+	/* bottom: 150px; */
+
+	/* height: max-content; */
+	min-width: 300px;
+	opacity: 0;
+	transition: all 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
+	border-radius: 4px;
+	cursor: pointer;
+
+	right: auto;
+	top: unset !important;
+	bottom: 2rem;
+}
+.toastify.on {
+	opacity: 1;
+}
+/* ---------------------------------------------------------------------- */
+
+.wrapper {
+	/* display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between; */
+	/* gap: 100px; */
+	/* width: 1300px; */
+}
+
+.imgWrap {
+	width: 200px;
+}
+.imgWrap img {
+	width: 100%;
+}
