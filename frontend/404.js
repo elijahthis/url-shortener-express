@@ -1,4 +1,4 @@
-import { BACKEND_URL } from "./script";
+export const BACKEND_URL = "https://url-shortener-express-0w95.onrender.com";
 
 const route = window.location.pathname.split("/")[1];
 
