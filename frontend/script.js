@@ -1,5 +1,6 @@
-const BACKEND_URL = "http://localhost:3000";
-const FRONTEND_URL = "https://shorturl.at";
+// const BACKEND_URL = "http://localhost:3000";
+export const BACKEND_URL = "https://url-shortener-express-0w95.onrender.com";
+export const FRONTEND_URL = "https://shorturl.at";
 
 const submitButton = document.querySelector(".submit-button");
 const shortURLContainer = document.querySelector(".short-url a");
