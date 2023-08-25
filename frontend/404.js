@@ -23,7 +23,9 @@ const getLongURL = async () => {
 };
 // ---------------------------------------------------------
 
-document.addEventListener("DOMContentLoaded", async () => {
-	await getLongURL();
-	console.log("Redirected!");
-});
+getLongURL();
+
+// document.addEventListener("DOMContentLoaded", async () => {
+// 	await getLongURL();
+// 	console.log("Redirected!");
+// });
