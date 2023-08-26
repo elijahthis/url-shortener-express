@@ -15,13 +15,12 @@ app.use(cors());
 connectDB()
 	.then(() => {
 		console.log("Connected to MongoDB");
-	})
-	.then(() => {
 		app.listen(process.env.PORT, () => {
 			console.log(`Server is running on port ${process.env.PORT}`);
 		});
 	})
 	.catch((e) => {
+		console.log(e);
 		throw e;
 	});
 
